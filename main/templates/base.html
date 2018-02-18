@@ -1,0 +1,17 @@
+{% load render_bundle from webpack_loader %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Sample Django React</title>
+    </head>
+    <body>
+
+        {% block content %}
+        {% endblock %}
+
+        {% render_bundle 'main' %}
+        
+    </body>
+</html>
